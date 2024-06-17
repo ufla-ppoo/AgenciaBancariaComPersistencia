@@ -9,11 +9,13 @@ import java.io.Serializable;
  * 
  * @author Julio César Alves
  */
-public class Conta implements Serializable {
-    // Número da conta
+public class Conta implements Serializable {    
+    // Número da conta    
     private int numero;
     // Saldo da conta
     private double saldo;
+    // Versão da classe para serialização
+    private static final long serialVersionUID = 1L;
 
     /**
      * Cria um aconta com um número e um saldo.
